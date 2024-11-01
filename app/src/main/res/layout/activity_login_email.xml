@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginEmailActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/toolbar_bg02">
+
+        <ImageButton
+            android:id="@+id/toolbarBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_black"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:tint="?attr/colorOnPrimary"
+            />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/profileTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="15dp"
+            android:background="?attr/colorOnPrimary"
+            android:src="@drawable/person_black"
+            app:shapeAppearanceOverlay="@style/ImageStyle_Circle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:id="@+id/loginLabelTv"
+            android:text="Login to your account"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profileTv"
+            android:textColor="?attr/colorOnPrimary"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarRl"
+        android:padding="10dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTil"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:startIconDrawable="@drawable/email_black"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailEt"
+                android:inputType="textEmailAddress"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordTil"
+
+            android:layout_marginTop="4dp"
+            android:hint="Password"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:passwordToggleEnabled="true"
+            android:layout_below="@id/emailTil"
+            app:startIconDrawable="@drawable/lock_white"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordEt"
+                android:inputType="textPassword"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noAccountTv"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:text="@string/no_account_register"
+            android:paddingVertical="5dp"
+            android:layout_below="@+id/passwordTil"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginBtnTv"
+            android:minHeight="@dimen/m_button_height"
+            android:text="Login"
+            android:layout_alignParentBottom="true"
+            app:icon="@drawable/key_white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
