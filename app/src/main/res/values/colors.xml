@@ -3,6 +3,10 @@
     <color name="colorPrimary">#3CB379</color>
     <color name="colorPrimaryDark">#3CB379</color>
     <color name="black">#FF000000</color>
+    <color name="puspos">#FFFFFFFF</color>
+    <color name="green">#FFFFFFFF</color>
+    <color name="yellow">#FFFFFFFF</color>
+    <color name="blue">#FFFFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorGray01">#959595</color>
     <color name="colorGray02">#c6c6c6</color>

@@ -36,4 +36,15 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_bottom"
         app:labelVisibilityMode="labeled"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sellFab"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/add_back"
+        android:tint="@color/white"/>
+
 </RelativeLayout>

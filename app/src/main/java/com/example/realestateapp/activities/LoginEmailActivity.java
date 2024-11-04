@@ -54,7 +54,7 @@ public class LoginEmailActivity extends AppCompatActivity {
         binding.loginBtnTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-validateData();
+          validateData();
             }
         });
 
@@ -85,6 +85,7 @@ validateData();
 
         }else{
 
+            loginUser();
         }
     }
 

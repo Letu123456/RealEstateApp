@@ -83,6 +83,13 @@ beginGoogleLogin();
             }
         });
 
+        binding.loginPhoneBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginOptionActivity.this, LoginPhoneActivity.class));
+            }
+        });
+
     }
 
         private void beginGoogleLogin() {

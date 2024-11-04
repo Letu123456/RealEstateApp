@@ -3,6 +3,7 @@ package com.example.realestateapp.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,6 +55,13 @@ showFavoritsFragment();
 showProfileFragment();
                     }
                     return true;
+                }
+            });
+
+            binding.sellFab.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(MainActivity.this, AdCreateActivity.class));
                 }
             });
         }
